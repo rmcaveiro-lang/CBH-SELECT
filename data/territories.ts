@@ -1,0 +1,96 @@
+import type { Territory } from "./types";
+
+export const territories: Territory[] = [
+  {
+    id: "sport",
+    index: "01",
+    name: "Esporte",
+    title: "Sete modalidades. Uma temporada inteira.",
+    line: "Do alto rendimento à base, o esporte em si como território de marca.",
+    includes: ["Modalidades", "Circuitos", "Rankings", "Campeonatos", "Equipes", "Atletas"],
+    href: "/sport",
+    tone: "green",
+    hero: {
+      alt: "Conjunto em prova de salto",
+      brief: "Plano aberto de salto em pista, cavalo no ar, arquibancada ao fundo",
+      focus: "50% 35%",
+    },
+  },
+  {
+    id: "signature-events",
+    index: "02",
+    name: "Grandes eventos",
+    title: "As noites e as finais que o esporte inteiro acompanha.",
+    line: "Propriedades que só a CBH realiza, do Prêmio Hipismo Brasil à Casa CBH.",
+    includes: ["Prêmio Hipismo Brasil", "Casa CBH", "Grandes finais", "Grand Prix", "Eventos próprios"],
+    href: "/events",
+    tone: "night",
+    hero: {
+      alt: "Palco do Prêmio Hipismo Brasil",
+      brief: "Palco do Prêmio Hipismo Brasil com plateia, luz de cerimônia",
+      focus: "50% 40%",
+    },
+  },
+  {
+    id: "experiences",
+    index: "03",
+    name: "Experiências",
+    title: "Proximidade não se compra em ingresso.",
+    line: "Bastidores, atletas, hospitality e um dia inteiro dentro do esporte.",
+    includes: ["Hospitalidade", "Bastidores", "Atletas", "Jantares privados", "CBH Insider"],
+    href: "/experiences",
+    tone: "green-deep",
+    hero: {
+      alt: "Convidados acompanhando o aquecimento",
+      brief: "Convidados próximos ao aquecimento, luz de fim de tarde, cavalos em movimento",
+      focus: "50% 40%",
+    },
+  },
+  {
+    id: "media-content",
+    index: "04",
+    name: "Mídia e conteúdo",
+    title: "Da arena para a tela.",
+    line: "Presença nos canais da CBH e narrativas próprias, produzidas com o esporte.",
+    includes: ["Transmissões", "Redes sociais", "Séries de marca", "Histórias de atletas", "Documentários"],
+    href: "/explore?t=media-content",
+    tone: "graphite",
+    hero: {
+      alt: "Equipe de filmagem na pista",
+      brief: "Câmera em primeiro plano registrando um conjunto, bastidor de produção",
+      focus: "50% 45%",
+    },
+  },
+  {
+    id: "merch-licensing",
+    index: "05",
+    name: "Produtos e licenciamento",
+    title: "O hipismo brasileiro como objeto.",
+    line: "Coleções oficiais, edições limitadas e produtos desenvolvidos em conjunto.",
+    includes: ["Coleção CBH", "Time Brasil", "Edições limitadas", "CBH × Marca", "Presentes corporativos"],
+    href: "/explore?t=merch-licensing",
+    tone: "stone",
+    hero: {
+      alt: "Peças da coleção oficial",
+      brief: "Still de produto: jaqueta e boné oficiais sobre superfície neutra",
+      focus: "50% 50%",
+    },
+  },
+  {
+    id: "impact",
+    index: "06",
+    name: "Impacto",
+    title: "Invista no que move o esporte.",
+    line: "Projetos incentivados, paraequestre, formação e base.",
+    includes: ["Lei de Incentivo", "Paraequestre", "Formação", "Base", "Legado"],
+    href: "/explore?t=impact",
+    tone: "paper",
+    hero: {
+      alt: "Jovens cavaleiros em aula",
+      brief: "Crianças e jovens em atividade de formação, instrutor ao lado",
+      focus: "50% 40%",
+    },
+  },
+];
+
+export const territoryById = (id: string) => territories.find((t) => t.id === id);
